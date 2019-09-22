@@ -56,23 +56,15 @@ function decode(expr) {
             } 
         }
         
-        if (tempArr.length){
-            
-            
-            retStr += MORSE_TABLE[tempArr.join("")];
-        
-            
-            
- 
+        if (tempArr.length){  
+            retStr += MORSE_TABLE[tempArr.join("")]; 
         } else {
             retStr += " ";
         }
-
         tempArr.length = 0;
     }
     return retStr;
 }
-
 module.exports = {
     decode
 }
